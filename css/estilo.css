@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    margin: 2px;
+    background-color: #f8edeba6;
+    height: 100vh;
+
+}
+
+/* GRID INDEX */
+
+.body__index {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1.6fr 1fr 0.5fr 0.5fr;
+    grid-template-areas:
+        "header header header header"
+        "main main main main"
+        "info info info info"
+        "horarios horarios . ."
+        "footer footer footer footer";
+}
+
+/* GRID ESTILOS */
+
+.body__estilos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1.6fr 1fr 0.5fr;
+    grid-template-areas:
+        "header header header header"
+        "main main main main"
+        "info info info info"
+        "footer footer footer footer";
+}
+
+/* cuerpo y texto */
+
+#inicio {
+    background-color: #F3D8C7;
+    grid-area: header;
+}
+
+.inicio__titulo {
+    color: #4d4646;
+    text-align: center;
+    font-size: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 0.5px groove #d8e2dc;
+}
+
+/* Menu y submenu */
+
+.menu {
+    background-color: #EFE5DC;
+    border: 0.5px groove #d8e2dc;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1rem 0.5rem;
+    font-size: 20px;
+    position: relative;
+}
+
+.menu li {
+    padding: 10px 20px;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #4d4646;
+
+}
+
+.menu li a:hover {
+    font-weight: bold;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+}
+
+.submenu li {
+    display: block;
+    background-color: #EFE5DC;
+    font-size: 17px;
+    padding: 10px 15px;
+    opacity: 90%;
+    text-align: left;
+
+}
+
+.submenu li a {
+    color: #4d4646;
+    list-style-type: none;
+}
+
+.menu li:hover ul {
+    display: block;
+}
+
+/* contenido ppal */
+
+.main {
+    padding: 5px;
+    grid-area: main;
+}
+
+.intro {
+    text-align: center;
+    font-size: 26px;
+    line-height: 30px;
+    padding-top: 40px;
+}
+
+.intro__text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 20px;
+}
+
+.main_meditacion {
+    display: flex;
+    flex-direction: column;
+}
+
+/* imagenes */
+
+.img_meditacion {
+    max-width: 100%;
+    width: 700px;
+    height: 480px;
+    align-self: center;
+    border: 2px solid #bdbba9;
+}
+
+.img__practica {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.img__practica img {
+    width: 400px;
+    height: 280px;
+    padding-bottom: 20px;
+}
+
+.index_galeria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.index_galeria img {
+    padding: 5px;
+    width: 350px;
+    height: 230px;
+}
+
+.estilos__galeria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+}
+
+.estilos__galeria img {
+    padding: 5px;
+    width: 500px;
+    height: 380px;
+    border: 1px solid #713d4b;
+}
+
+/* TRANSFORMACIONES */
+
+.index_galeria img:hover{
+    width: 355px;
+    height: 235px;
+}
+.img__practica img:hover{
+    width: 410px;
+    height: 290px;
+}
+
+.estilos__galeria img:hover{
+    width: 520px;
+    height: 400px;
+}
+
+
+/* secciones */
+
+.section__info {
+    margin: 30px 30px;
+    padding: 10px 15px 16px 30px;
+    border: 1px groove;
+    overflow: scroll;
+    height: 380px;
+    line-height: 25px;
+    background-color: #f8f2f2;
+    grid-area: info;
+}
+
+.meditacionLista {
+    padding: 10px 60px;
+    margin: 40px;
+}
+
+.meditacionLista ul li {
+    list-style-type: lower-latin;
+    line-height: 25px;
+}
+
+.titulo {
+    padding: 8px;
+    text-align: justify;
+}
+
+.horarios {
+    padding: 30px 0px 50px 50px;
+    grid-area: horarios;
+
+}
+
+.horarios h4 {
+    padding-bottom: 5px;
+}
+
+.formulario {
+    margin: 20px;
+    padding: 20px;
+}
+
+.formulario label {
+    margin: 10px;
+}
+
+.formulario input {
+    margin: 10px;
+    padding: 5px;
+}
+
+.formulario textarea {
+    margin: 10px 20px 20px 20px;
+    display: block;
+}
+
+/* pie de pagina */
+
+footer {
+    border-top: 0.5px groove #d8e2dc;
+    background-image: linear-gradient(to top, #D0B8AC, #f3d8c7);
+    padding: 20px;
+    grid-area: footer;
+}
+
+.mapa {
+    padding-bottom: 5px;
+}
+
+.mapa h4 {
+    padding-bottom: 5px;
+}
+
+.redes {
+    padding-bottom: 5px;
+}
+
+.redes a {
+    color: #4d4646;
+    text-decoration: none;
+}
+
+/* media queris INDEX*/
+
+@media screen and (max-width: 480px) {
+    .body__index {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 1.8fr 0.3fr 0.2fr 0.3fr;
+        grid-template-areas:
+            "header"
+            "main"
+            "info"
+            "horarios"
+            "footer";
+        justify-content: center;
+    }
+
+    #inicio .menu li {
+        font-size: 1rem;
+    }
+
+    .intro__text,
+    .index_galeria {
+        width: 95%;
+    }
+
+    .horarios {
+        width: 90%;
+        margin-right: 5px;
+    }
+
+    footer,
+    .mapa,
+    .redes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inicio__titulo {
+        font-size: 30px;
+    }
+}
+
+/* MEDIA QUERIS ESTILOS*/
+
+@media screen and (max-width: 480px) {
+    .body__estilos {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 1.8fr 0.3fr 0.3fr;
+        grid-template-areas:
+            "header"
+            "main"
+            "info"
+            "footer";
+        justify-content: center;
+    }
+
+    .titulo_estilos,
+    .intro {
+        font-size: 24px;
+        padding-top: 15px;
+    }
+}
+
+/* MEDIA QUERIS MEDITACION */
+
+@media screen and (max-width: 480px) {
+    .img_meditacion {
+        width: 95%;
+        height: auto;
+    }
+}
+
+/* MEDIA QUERIS CONTACTO */
+
+@media screen and (max-width: 480px) {
+    .estilos__galeria img {
+        width: 100%;
+        height: auto;
+    }
+
+    .formulario {
+        margin: 0px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .main_contacto {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

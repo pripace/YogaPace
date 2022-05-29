@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/estilo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ANIMATE ANIMATED -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!--Link a AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="../imagenes/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Contacto</title>
+  </head>
+
+  <body class="body__contacto">
+    <header id="inicio">
+      <h1 class="inicio__titulo">Yoga y Vida</h1>
+      <nav>
+        <ul class="menu">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="estilos.html">Estilos</a></li>
+          <li><a href="practica.html">Práctica</a></li>
+          <li><a href="meditacion.html">Meditación</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main main_contacto">
+      <div class="estilos__galeria">
+        <img src="../imagenes/yogajerog.jpg" alt="jerogrifico yoga" />
+        <img src="../imagenes/yogapiedra.jpg" alt="Yoga en la antiguedad" />
+      </div>
+
+      <section
+        class="formulario"
+      >
+        <h3 class="titulo">Consultas o sugerencias:</h3>
+        <form>
+          <fieldset>
+            <legend>Formulario de contacto</legend>
+
+            <label for="nombre">Ingrese su nombre:</label>
+            <input type="text" placeholder="Ingrese su nombre" name="nombre" />
+
+            <label for="email">Ingrese su email:</label>
+            <input type="email" placeholder="Su Email" name="email" />
+
+            <label for="tel">Ingrese su teléfono:</label>
+            <input type="tel" placeholder="Teléfono" name="tel" />
+
+            <label for="region">Desde donde nos visitas?</label>
+            <select name="region" id="">
+              <option value="lat">Latinoamerica</option>
+              <option value="cent">Centroamerica</option>
+              <option value="nort">Norteamerica</option>
+              <option value="otro">Otro continente</option>
+            </select>
+            <br />
+            <label for="llamar">Cómo quiere ser contactado?</label>
+            <input type="radio" value="comunicar" name="llamar" />Llamar
+            <input type="radio" value="comunicar" name="llamar" />Whatsapp
+            <input type="radio" value="comunicar" name="llamar" />Correo
+            <input type="radio" value="comunicar" name="llamar" />Cualquiera de
+            los anteriores
+
+            <textarea
+              name=""
+              id=""
+              cols="40"
+              rows="10"
+              placeholder="Deje su mensaje"
+            >
+  Buenos días. Mi consulta y/o duda es:</textarea
+            >
+
+            <input
+              class="form__check"
+              type="checkbox"
+              value="acepta term"
+            />Acepto el envío de mis datos personales.
+            <input type="checkbox" value="acepta cont" />Acepto ser contactado.
+
+            <input class="form__boton" type="submit" />
+            <input class="form__boton" type="reset" />
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="mapa">
+        <h4>Donde estamos:</h4>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108977.06038912067!2d-64.26438422252431!3d-31.399434162351472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432985f478f5b69%3A0xb0a24f9a5366b092!2zQ8OzcmRvYmE!5e0!3m2!1ses!2sar!4v1647366496040!5m2!1ses!2sar"
+          width="200"
+          height="150"
+          style="border: 1px groove #6464614f"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+
+      <div class="redes">
+        <h3>Redes Sociales</h3>
+        <a href="https://www.instagram.com" target="blank">Instagram</a>
+        <a href="https://www.facebook.com" target="blank">Facebook</a>
+        <a href="https://wa.me/5493517551461" target="blank">Whatsapp</a>
+        <a
+          href="mailto:priscila.d.pace@gmail.com?Subject=Consulta"
+          target="blank"
+          >Enviar email</a
+        >
+        <a
+          href="https://www.linkedin.com/in/priscila-denise-pace/"
+          target="blank"
+          >Linkedin</a
+        >
+        <a href="#inicio">Volver arriba</a>
+      </div>
+      <p>Copyright © 2022</p>
+    </footer>
+    <!-- ANIMATE ANIMATED -->
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: "ease-out-back",
+        duration: 1000,
+      });
+    </script>
+  </body>
+</html>
