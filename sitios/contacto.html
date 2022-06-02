@@ -19,6 +19,13 @@
     />
     <!--Link a AOS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- CSS only Boostrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
     <link
       rel="shortcut icon"
       href="../imagenes/favicon.ico"
@@ -27,17 +34,70 @@
     <title>Contacto</title>
   </head>
 
-  <body class="body__contacto">
-    <header id="inicio">
+  <body class="body__contacto container-fluid">
+    <header id="inicio" class="container-fluid">
       <h1 class="inicio__titulo">Yoga y Vida</h1>
-      <nav>
-        <ul class="menu">
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="estilos.html">Estilos</a></li>
-          <li><a href="practica.html">Práctica</a></li>
-          <li><a href="meditacion.html">Meditación</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+
+      <!-- NAV MENU BOOSTRAP -->
+      <nav class="navbar navbar-expand-lg menu">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">Inicio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="estilos.html">Estilos</a></li>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="meditacion.html">Meditación</a></li>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Práctica
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="practica.html">Estiramiento</a></li>
+                  <li><a class="dropdown-item" href="practica.html">Asanas</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="practica.html">Gimnasia</a></li>
+                  </li>
+                </ul>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a></li>
+                </li>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Búqueda"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Buscar
+              </button>
+            </form>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -47,69 +107,69 @@
         <img src="../imagenes/yogapiedra.jpg" alt="Yoga en la antiguedad" />
       </div>
 
-      <section
-      class="formulario"
-      data-aos="fade-down"
-      data-aos-easing="linear"
-      data-aos-duration="1500"
-    >
+      <!-- FORM BOOSTRAP -->
 
-        <h3 class="titulo">Consultas o sugerencias:</h3>
-        <form>
-          <fieldset>
-            <legend>Formulario de contacto</legend>
+      <div class="container mb-4 mt-5">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Su Email</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="su.email@ejemplo.com"
+          />
+        </div>
+        <div class="col-auto">
+          <label for="inputPassword2" class="visually-hidden">Contraseña</label>
+          <input
+            type="password"
+            class="form-control"
+            id="inputPassword2"
+            placeholder="Contraseña"
+          />
+        </div>
+        <label for="exampleDataList" class="form-label mt-2"
+          >Desde dónde nos visitas?</label
+        >
+        <input
+          class="form-control"
+          list="datalistOptions"
+          id="exampleDataList"
+          placeholder="Busque su región..."
+        />
+        <datalist id="datalistOptions">
+          <option value="América Latinoamerica"></option>
+          <option value="Centroamérica"></option>
+          <option value="Norteamerica"></option>
+          <option value="Europa"></option>
+          <option value="Asia"></option>
+          <option value="Africa"></option>
+          <option value="Oceanía"></option>
+          <option value="Otro"></option>
+        </datalist>
 
-            <label for="nombre">Ingrese su nombre:</label>
-            <input type="text" placeholder="Ingrese su nombre" name="nombre" />
-
-            <label for="email">Ingrese su email:</label>
-            <input type="email" placeholder="Su Email" name="email" />
-
-            <label for="tel">Ingrese su teléfono:</label>
-            <input type="tel" placeholder="Teléfono" name="tel" />
-
-            <label for="region">Desde donde nos visitas?</label>
-            <select name="region" id="">
-              <option value="lat">Latinoamerica</option>
-              <option value="cent">Centroamerica</option>
-              <option value="nort">Norteamerica</option>
-              <option value="otro">Otro continente</option>
-            </select>
-            <br />
-            <label for="llamar">Cómo quiere ser contactado?</label>
-            <input type="radio" value="comunicar" name="llamar" />Llamar
-            <input type="radio" value="comunicar" name="llamar" />Whatsapp
-            <input type="radio" value="comunicar" name="llamar" />Correo
-            <input type="radio" value="comunicar" name="llamar" />Cualquiera de
-            los anteriores
-
-            <textarea
-              name=""
-              id=""
-              cols="40"
-              rows="10"
-              placeholder="Deje su mensaje"
-            >
-  Buenos días. Mi consulta y/o duda es:</textarea
-            >
-
-            <input
-              class="form__check"
-              type="checkbox"
-              value="acepta term"
-            />Acepto el envío de mis datos personales.
-            <input type="checkbox" value="acepta cont" />Acepto ser contactado.
-
-            <input class="form__boton" type="submit" />
-            <input class="form__boton" type="reset" />
-          </fieldset>
-        </form>
-      </section>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Escriba su consulta/sugerencia aquí:</label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+            placeholder="Escriba aquí"
+          ></textarea>
+        </div>
+        <div class="col-auto mt-3">
+          <button type="submit" class="btn btn-secondary mb-4">Enviar</button>
+        </div>
+      </div>
     </main>
 
     <footer>
       <div class="mapa">
-        <h4>Donde estamos:</h4>
+        <h4 class="h4">Donde estamos:</h4>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108977.06038912067!2d-64.26438422252431!3d-31.399434162351472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432985f478f5b69%3A0xb0a24f9a5366b092!2zQ8OzcmRvYmE!5e0!3m2!1ses!2sar!4v1647366496040!5m2!1ses!2sar"
           width="200"
@@ -121,7 +181,7 @@
       </div>
 
       <div class="redes">
-        <h3>Redes Sociales</h3>
+        <h3 class="h5">Redes Sociales</h3>
         <a href="https://www.instagram.com" target="blank">Instagram</a>
         <a href="https://www.facebook.com" target="blank">Facebook</a>
         <a href="https://wa.me/5493517551461" target="blank">Whatsapp</a>
@@ -152,5 +212,11 @@
         duration: 1000,
       });
     </script>
+    <!-- JavaScript Bundle with Popper Boostrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
