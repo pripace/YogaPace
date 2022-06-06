@@ -10,13 +10,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
-      <!-- ANIMATE ANIMATED -->
-      <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <!--Link a AOS-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- ANIMATE ANIMATED -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!--Link a AOS-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- Boostrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
   <link rel="shortcut icon" href="../imagenes/favicon.ico" type="image/x-icon" />
   <title>Estilos de Yoga</title>
 </head>
@@ -24,31 +24,48 @@
 <body class="body__estilos">
   <header id="inicio">
     <h1 class="inicio__titulo">Yoga y Vida</h1>
-    <nav>            <!-- MENU -->
-      <ul class="menu">
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="estilos.html">Estilos</a></li>
-        <li><a href="practica.html">Práctica</a></li>
-        <li><a href="meditacion.html">Meditación</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
+    <!-- MENU NAV -->
+    <nav class="navbar navbar-expand-lg menu mx-auto py-0">
+      <div class="menu">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="menu navbar-nav">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="estilos.html">Estilos</a></li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="practica.html">Práctica</a>
+              <ul class="submenu">
+                <li><a href="">Estiramientos</a></li>
+                <li><a href="">Gimnasia</a></li>
+                <li><a href="">Asanas</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="meditacion.html">Meditación</a>
+            </li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
-                      <!-- CONTENIDO PPAL -->
-<main class="main main_estilos">
-  <h3 class="intro titulo_estilos wow animate__animated animate__fadeIn">
-                    Conozcamos los estilos de Yoga que puedes practicar en nuestra sala</h3>
+  <!-- CONTENIDO PPAL -->
+  <main class="main main_estilos">
+    <h3 class="intro titulo_estilos wow animate__animated animate__fadeIn">
+      Conozcamos los estilos de Yoga que puedes practicar en nuestra sala</h3>
     <p class="intro__text">El Yoga significa Union, uno, sintesis de cuerpo, alma y ser. Con el paso del tiempo se han
       ido diferenciando algunas formas distintas para la práctica. Vamos a conocerlas, siempre teniendo en cuenta que el
       yoga es uno solo.</p>
-      <div class="estilos__galeria">
-    <img src="../imagenes/aperturaPecho.jpg" alt="Apertura de pecho" />
-    <img src="../imagenes/galeria/Ashtanga-Yoga.jpg" alt="guerrero 1">
-  </div>
+    <div class="estilos__galeria">
+      <img src="../imagenes/aperturaPecho.jpg" alt="Apertura de pecho" />
+      <img src="../imagenes/galeria/Ashtanga-Yoga.jpg" alt="guerrero 1">
+    </div>
   </main>
-                  <!-- MAS INFO -->
-<section class="section__info" data-aos="zoom-in">
+  <!-- MAS INFO -->
+  <section class="section__info" data-aos="zoom-in">
     <p>
       <h4>Hatha Yoga:</h4> Uno de los tipos de yoga más tradicionales es el Hatha Yoga. Bebe directamente de los estilos
       de yoga más físicos y forma parte de lo que se conoce como la quinta vía del camino del Yoga. Está especialmente
@@ -81,7 +98,7 @@
     </p>
 
   </section>
-          <!-- PIE DE PAGINA -->
+  <!-- PIE DE PAGINA -->
   <footer>
     <div class="mapa">
       <h4>Donde estamos:</h4>
@@ -101,19 +118,23 @@
     </div>
     <p>Copyright © 2022</p>
   </footer>
-      <!-- ANIMATE ANIMATED -->
-      <script src="js/wow.min.js"></script>
-      <script>
-        new WOW().init();
-      </script>
-      <!-- AOS -->
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script>
-        AOS.init({
-          easing: "ease-out-back",
-          duration: 1000,
-        });
-      </script>
+  <!-- ANIMATE ANIMATED -->
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      easing: "ease-out-back",
+      duration: 1000,
+    });
+  </script>
+  <!-- JavaScript Bundle with Popper Boostrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
