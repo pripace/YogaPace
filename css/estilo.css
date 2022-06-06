@@ -111,6 +111,9 @@ body {
 .main {
     padding: 5px;
     grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
 
 .intro {
@@ -121,15 +124,17 @@ body {
 }
 
 .intro__text {
-    text-align: center;
-    font-size: 16px;
+    text-align: justify;
+    font-size: 18px;
     line-height: 25px;
     padding: 20px;
+    margin: 0px 40px;
 }
 
 .main_meditacion {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 /* imagenes */
@@ -174,7 +179,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding-top: 1rem;
+    padding-top: 2rem;
 }
 
 .estilos__galeria img {
@@ -285,9 +290,16 @@ footer {
         font-size: 1rem;
     }
 
-    .intro__text,
-    .index_galeria {
-        width: 95%;
+    .intro__text{
+        text-align: justify;
+        font-size: 16px;
+        line-height: 20px;
+        padding: 10px;
+        margin: 0px 30px;
+    }
+
+    .index_galeria, .estilos__galeria {
+        width: 100%;
     }
 
     .horarios {
@@ -333,9 +345,10 @@ footer {
 
 @media screen and (max-width: 480px) {
     .img_meditacion {
-        width: 95%;
+        width: 100%;
         height: auto;
     }
+
 }
 
 /* MEDIA QUERIS CONTACTO */
