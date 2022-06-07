@@ -2,14 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
 }
 
 body {
     margin: 2px;
     background-color: #f8edeba6;
     height: 100vh;
-
 }
 
 /* GRID INDEX */
@@ -42,9 +41,10 @@ body {
 /* cuerpo y texto */
 
 #inicio {
-    background-color: #F3D8C7;
+    background-color: #f3d8c7;
     grid-area: header;
     border: 0.05px groove #4d4646;
+    margin: 2px 4px;
 }
 
 .inicio__titulo {
@@ -58,7 +58,7 @@ body {
 /* Menu y submenu */
 
 .menu {
-    background-color: #EFE5DC;
+    background-color: #efe5dc;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -75,7 +75,6 @@ body {
 .menu li a {
     text-decoration: none;
     color: #4d4646;
-
 }
 
 .menu li a:hover {
@@ -89,12 +88,11 @@ body {
 
 .submenu li {
     display: block;
-    background-color: #EFE5DC;
+    background-color: #efe5dc;
     font-size: 17px;
     padding: 10px 15px;
     opacity: 90%;
     text-align: left;
-
 }
 
 .submenu li a {
@@ -157,7 +155,8 @@ body {
 .img__practica img {
     width: 400px;
     height: 280px;
-    padding-bottom: 20px;
+    padding: 5px;
+    border: 1px solid #bdbba9;
 }
 
 .index_galeria {
@@ -206,7 +205,6 @@ body {
     height: 400px;
 }
 
-
 /* secciones */
 
 .section__info {
@@ -238,7 +236,6 @@ body {
 .horarios {
     padding: 30px 0px 50px 50px;
     grid-area: horarios;
-
 }
 
 .horarios h4 {
@@ -249,7 +246,7 @@ body {
 
 footer {
     border-top: 0.5px groove #d8e2dc;
-    background-image: linear-gradient(to top, #D0B8AC, #f3d8c7);
+    background-image: linear-gradient(to top, #d0b8ac, #f3d8c7);
     padding: 20px;
     grid-area: footer;
 }
@@ -290,7 +287,7 @@ footer {
         font-size: 1rem;
     }
 
-    .intro__text{
+    .intro__text {
         text-align: justify;
         font-size: 16px;
         line-height: 20px;
@@ -298,7 +295,8 @@ footer {
         margin: 0px 30px;
     }
 
-    .index_galeria, .estilos__galeria {
+    .index_galeria,
+    .estilos__galeria {
         width: 100%;
     }
 
@@ -348,7 +346,6 @@ footer {
         width: 100%;
         height: auto;
     }
-
 }
 
 /* MEDIA QUERIS CONTACTO */
@@ -373,6 +370,10 @@ footer {
 
 /* Pisando Boostrap */
 
-.body, .body__contacto, .body__index, .body__estilos {
+.body,
+.body__contacto,
+.body__index,
+.body__estilos {
     background-color: #f8edeba6;
+    margin: 1px;
 }
