@@ -1,0 +1,15 @@
+.section__info {
+    margin: 30px 30px;
+    padding: 10px 15px 16px 30px;
+    border: 1px groove;
+    overflow: scroll;
+    height: 380px;
+    line-height: 25px;
+    background-color: #f8f2f2;
+    grid-area: info;
+
+    .titulo {
+        padding: 8px;
+        text-align: justify;
+    }
+}

@@ -1,0 +1,44 @@
+.main {
+    padding: 5px;
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    .intro {
+        text-align: center;
+        font-size: 26px;
+        color: $colorLetras;
+        line-height: 30px;
+        padding-top: 40px;
+    }
+
+    .intro__text {
+        text-align: justify;
+        font-size: 18px;
+        color: $colorLetras;
+        line-height: 25px;
+        padding: 20px;
+        margin: 0px 40px;
+    }
+
+    .index_galeria {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 1rem;
+
+        img {
+            padding: 5px;
+            width: 350px;
+            height: 230px;
+
+            &:hover {
+                width: 355px;
+                height: 235px;
+            }
+
+        }
+    }
+}
