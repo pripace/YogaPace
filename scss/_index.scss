@@ -1,0 +1,84 @@
+.body__index {
+  margin: 2px;
+  background-color: $colorFondo;
+  font-family: "Lato", sans-serif;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 1.6fr 1fr 0.5fr 0.5fr;
+  grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "info info info info"
+    "horarios horarios . ."
+    "footer footer footer footer";
+}
+
+.main {
+  padding: 5px;
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  .intro {
+    text-align: center;
+    font-size: 26px;
+    color: $colorLetras;
+    line-height: 30px;
+    padding-top: 40px;
+  }
+
+  .intro__text {
+    text-align: justify;
+    font-size: 18px;
+    color: $colorLetras;
+    line-height: 25px;
+    padding: 20px;
+    margin: 0px 40px;
+  }
+
+  .index_galeria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 1rem;
+
+    img {
+      padding: 5px;
+      width: 350px;
+      height: 230px;
+
+      &:hover {
+        width: 355px;
+        height: 235px;
+      }
+    }
+  }
+}
+
+.section__info {
+  margin: 30px 30px;
+  padding: 10px 15px 16px 30px;
+  border: 1px groove;
+  overflow: scroll;
+  height: 380px;
+  line-height: 25px;
+  background-color: #f8f2f2;
+  grid-area: info;
+
+  .titulo {
+    padding: 8px;
+    text-align: justify;
+  }
+}
+
+.horarios {
+  padding: 30px 0px 50px 50px;
+  grid-area: horarios;
+
+  h4 {
+    padding-bottom: 5px;
+  }
+}

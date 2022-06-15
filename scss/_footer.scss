@@ -1,0 +1,23 @@
+footer {
+    border-top: 0.5px groove #d8e2dc;
+    background-image: linear-gradient(to top, #1cb338, #f3d8c7);
+    padding: 20px;
+    grid-area: footer;
+
+    .mapa {
+        padding-bottom: 5px;
+
+        h4 {
+            padding-bottom: 5px;
+        }
+    }
+
+    .redes {
+        padding-bottom: 5px;
+
+        a {
+            color: $colorLetras;
+            text-decoration: none;
+        }
+    }
+}

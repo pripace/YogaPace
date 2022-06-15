@@ -1,0 +1,16 @@
+@import "variables";
+@import "header";
+@import "footer";
+@import "index";
+@import "practica";
+@import "estilos";
+@import "meditacion";
+@import "contacto";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
