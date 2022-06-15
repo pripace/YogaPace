@@ -1,5 +1,5 @@
 .inicio {
-    background-color: #f3d8c7;
+    background-image: linear-gradient(to top, #f3d8c7,#e7cab7);
     grid-area: header;
     border: 0.05px groove $colorLetras;
     margin: 2px 4px;
@@ -25,7 +25,8 @@
                 padding: 5px;
                 font-size: 20px;
                 list-style-type: none;
-                &:hover ul{
+
+                &:hover ul {
                     display: block;
                 }
 
@@ -56,10 +57,10 @@
                     a {
                         color: $colorLetras;
                         list-style-type: none;
-                        }
                     }
-
                 }
+
             }
         }
     }
+}
