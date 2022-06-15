@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "variables";
 @import "header";
 @import "footer";
@@ -14,3 +15,28 @@
     font-family: "Lato", sans-serif;
 }
 
+=======
+
+@import "variables";
+@import "header";
+@import "main";
+@import "section";
+@import "tabla";
+@import "footer";
+
+.body__index {
+    margin: 2px;
+    background-color:  $colorFondo;
+    font-family: "Lato", sans-serif;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1.6fr 1fr 0.5fr 0.5fr;
+    grid-template-areas:
+        "header header header header"
+        "main main main main"
+        "info info info info"
+        "horarios horarios . ."
+        "footer footer footer footer";
+}
+>>>>>>> e19b3450958fa90f3d48748470847785b236b9db
