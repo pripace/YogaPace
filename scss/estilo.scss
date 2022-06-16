@@ -1,12 +1,12 @@
 @import "variables";
+@import "mixin";
 @import "header";
 @import "footer";
 @import "index";
 @import "practica";
 @import "estilos";
 @import "meditacion";
-@import "contacto";
-@import "mixin";
+
 
 * {
     margin: 0;
@@ -27,6 +27,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: stretch;
+
     .intro {
         text-align: center;
         font-size: 26px;
@@ -44,18 +45,19 @@ body {
 }
 
 .section__info {
-    margin: 30px 30px;
+    margin: 30px;
     padding: 10px 15px 16px 30px;
     @include borde (#706f63);
     overflow: scroll;
     height: 380px;
     line-height: 25px;
-    background-color: #f8f2f2;
+    background-color: $colorFondo;
     grid-area: info;
+
     .titulo {
         padding: 8px;
         text-align: justify;
-      }
+    }
 }
 
 .estilos__galeria {
@@ -144,11 +146,7 @@ body {
         padding-top: 15px;
     }
 
-    .img_meditacion {
-        width: 100%;
-        height: auto;
-    }
-
+    .img_meditacion,
     .estilos__galeria img {
         width: 100%;
         height: auto;
@@ -165,5 +163,3 @@ body {
         flex-direction: column-reverse;
     }
 }
-
-

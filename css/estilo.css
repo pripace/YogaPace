@@ -1,7 +1,7 @@
 .inicio {
   background-image: linear-gradient(to top, #f3d8c7, #e7cab7);
   grid-area: header;
-  border: 0.05px groove #4d4646;
+  border: 1px groove #4d4646;
   margin: 2px 4px;
 }
 .inicio .inicio__titulo {
@@ -55,15 +55,10 @@ footer {
   border-top: 0.5px groove #d8e2dc;
   background-image: linear-gradient(to bottom, #f3d8c7, #e7cab7);
   padding: 20px;
+  margin: 2px;
   grid-area: footer;
 }
-footer .mapa {
-  padding-bottom: 5px;
-}
-footer .mapa h4 {
-  padding-bottom: 5px;
-}
-footer .redes {
+footer .mapa, footer .redes, footer .redes h4, footer .mapa h4 {
   padding-bottom: 5px;
 }
 footer .redes a {
@@ -82,58 +77,21 @@ footer .redes a {
   grid-template-areas: "header header header header" "main main main main" "info info info info" "horarios horarios . ." "footer footer footer footer";
 }
 
-.main {
-  padding: 5px;
-  grid-area: main;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-}
-.main .intro {
-  text-align: center;
-  font-size: 26px;
-  color: #4d4646;
-  line-height: 30px;
-  padding-top: 40px;
-}
-.main .intro__text {
-  text-align: justify;
-  font-size: 18px;
-  color: #4d4646;
-  line-height: 25px;
-  padding: 20px;
-  margin: 0px 40px;
-}
-.main .index_galeria {
+.index_galeria {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 1rem;
 }
-.main .index_galeria img {
+.index_galeria img {
   padding: 5px;
   width: 350px;
   height: 230px;
 }
-.main .index_galeria img:hover {
+.index_galeria img:hover {
   width: 355px;
   height: 235px;
-}
-
-.section__info {
-  margin: 30px 30px;
-  padding: 10px 15px 16px 30px;
-  border: 1px groove;
-  overflow: scroll;
-  height: 380px;
-  line-height: 25px;
-  background-color: #f8f2f2;
-  grid-area: info;
-}
-.section__info .titulo {
-  padding: 8px;
-  text-align: justify;
 }
 
 .horarios {
@@ -142,27 +100,6 @@ footer .redes a {
 }
 .horarios h4 {
   padding-bottom: 5px;
-}
-
-.main {
-  padding: 5px;
-  grid-area: main;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-}
-.main .intro {
-  text-align: center;
-  font-size: 26px;
-  line-height: 30px;
-  padding-top: 40px;
-}
-.main .intro__text {
-  text-align: justify;
-  font-size: 18px;
-  line-height: 25px;
-  padding: 20px;
-  margin: 0px 40px;
 }
 
 .img__practica {
@@ -175,22 +112,11 @@ footer .redes a {
   width: 400px;
   height: 280px;
   padding: 5px;
-  border: 1px solid #bdbba9;
+  border: 1px groove #bdbba9;
 }
 .img__practica img:hover {
   width: 410px;
   height: 290px;
-}
-
-.section__info {
-  margin: 30px 30px;
-  padding: 10px 15px 16px 30px;
-  border: 1px groove;
-  overflow: scroll;
-  height: 380px;
-  line-height: 25px;
-  background-color: #f8f2f2;
-  grid-area: info;
 }
 
 .body__estilos {
@@ -201,54 +127,11 @@ footer .redes a {
   background-color: rgba(248, 237, 235, 0.6509803922);
 }
 
-.main {
-  padding: 5px;
-  grid-area: main;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-}
-.main .intro,
-.main .titulo_estilos {
+.titulo_estilos {
   text-align: center;
   font-size: 26px;
   line-height: 30px;
   padding-top: 40px;
-}
-.main .intro__text {
-  text-align: justify;
-  font-size: 18px;
-  line-height: 25px;
-  padding: 20px;
-  margin: 0px 40px;
-}
-.main .estilos__galeria {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding-top: 2rem;
-}
-.main .estilos__galeria img {
-  padding: 5px;
-  width: 500px;
-  height: 380px;
-  border: 1px solid #713d4b;
-}
-.main .estilos__galeria img:hover {
-  width: 520px;
-  height: 400px;
-}
-
-.section__info {
-  margin: 30px 30px;
-  padding: 10px 15px 16px 30px;
-  border: 1px groove;
-  overflow: scroll;
-  height: 380px;
-  line-height: 25px;
-  background-color: #f8f2f2;
-  grid-area: info;
 }
 
 .main_meditacion {
@@ -256,40 +139,12 @@ footer .redes a {
   flex-direction: column;
   align-items: center;
 }
-.main_meditacion .intro {
-  text-align: center;
-  font-size: 26px;
-  line-height: 30px;
-  padding-top: 40px;
-}
-.main_meditacion .intro__text {
-  text-align: justify;
-  font-size: 18px;
-  line-height: 25px;
-  padding: 20px;
-  margin: 0px 40px;
-}
 .main_meditacion .carousel .carousel-inner .carousel-item .img_meditacion {
   max-width: 100%;
   width: 700px;
   height: 480px;
   align-self: center;
-  border: 2px solid #bdbba9;
-}
-
-.section__info {
-  margin: 30px 30px;
-  padding: 10px 15px 16px 30px;
-  border: 1px groove;
-  overflow: scroll;
-  height: 380px;
-  line-height: 25px;
-  background-color: #f8f2f2;
-  grid-area: info;
-}
-.section__info .titulo {
-  padding: 8px;
-  text-align: justify;
+  border: 1px groove #bdbba9;
 }
 
 .meditacionLista {
@@ -299,27 +154,6 @@ footer .redes a {
 .meditacionLista .ul li {
   list-style-type: lower-latin;
   line-height: 25px;
-}
-
-.main {
-  padding: 5px;
-  grid-area: main;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-}
-.main .estilos__galeria {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding-top: 2rem;
-}
-.main .estilos__galeria img {
-  padding: 5px;
-  width: 500px;
-  height: 380px;
-  border: 1px solid #713d4b;
 }
 
 * {
@@ -333,6 +167,60 @@ body {
   margin: 2px;
   background-color: rgba(248, 237, 235, 0.6509803922);
   height: 100vh;
+}
+
+.main {
+  padding: 5px;
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.main .intro {
+  text-align: center;
+  font-size: 26px;
+  line-height: 30px;
+  padding-top: 40px;
+}
+.main .intro__text {
+  text-align: justify;
+  font-size: 18px;
+  line-height: 25px;
+  padding: 20px;
+  margin: 0px 40px;
+}
+
+.section__info {
+  margin: 30px;
+  padding: 10px 15px 16px 30px;
+  border: 1px groove #706f63;
+  overflow: scroll;
+  height: 380px;
+  line-height: 25px;
+  background-color: rgba(248, 237, 235, 0.6509803922);
+  grid-area: info;
+}
+.section__info .titulo {
+  padding: 8px;
+  text-align: justify;
+}
+
+.estilos__galeria {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 2rem;
+}
+.estilos__galeria img {
+  padding: 5px;
+  width: 500px;
+  height: 380px;
+  border: 1px groove #713d4b;
+}
+.estilos__galeria img:hover {
+  width: 520px;
+  height: 400px;
 }
 
 /* MEDIAS Q */
@@ -368,6 +256,9 @@ body {
 
   footer,
 .mapa,
+footer .mapa h4,
+footer .redes,
+footer .redes h4,
 .redes {
     display: flex;
     flex-direction: column;
@@ -391,12 +282,8 @@ body {
     padding-top: 15px;
   }
 
-  .img_meditacion {
-    width: 100%;
-    height: auto;
-  }
-
-  .estilos__galeria img {
+  .img_meditacion,
+.estilos__galeria img {
     width: 100%;
     height: auto;
   }

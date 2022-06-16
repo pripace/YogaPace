@@ -1,7 +1,7 @@
 .inicio {
     background-image: linear-gradient(to top, #f3d8c7,#e7cab7);
     grid-area: header;
-    @include borde ($colorLetras);
+    @include borde($colorLetras);
     margin: 2px 4px;
 
     .inicio__titulo {
