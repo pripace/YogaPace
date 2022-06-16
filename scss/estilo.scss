@@ -6,11 +6,106 @@
 @import "estilos";
 @import "meditacion";
 @import "contacto";
-
+@import "mixin";
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Lato", sans-serif;
 }
+
+body {
+    margin: 2px;
+    background-color: $colorFondo;
+    height: 100vh;
+}
+
+/* MEDIAS Q */
+
+@media screen and (max-width: 480px) {
+    .body__index {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 1.8fr 0.3fr 0.2fr 0.3fr;
+        grid-template-areas:
+            "header"
+            "main"
+            "info"
+            "horarios"
+            "footer";
+        justify-content: center;
+    }
+
+    #inicio .menu li {
+        font-size: 1rem;
+    }
+
+    .intro__text {
+        text-align: justify;
+        font-size: 16px;
+        line-height: 20px;
+        padding: 10px;
+        margin: 0px 30px;
+    }
+
+    .index_galeria,
+    .estilos__galeria {
+        width: 100%;
+    }
+
+    .horarios {
+        width: 90%;
+        margin-right: 5px;
+    }
+
+    footer,
+    .mapa,
+    .redes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inicio__titulo {
+        font-size: 30px;
+    }
+
+    .body__estilos {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 1.8fr 0.3fr 0.3fr;
+        grid-template-areas:
+            "header"
+            "main"
+            "info"
+            "footer";
+        justify-content: center;
+    }
+
+    .titulo_estilos,
+    .intro {
+        font-size: 24px;
+        padding-top: 15px;
+    }
+
+    .img_meditacion {
+        width: 100%;
+        height: auto;
+    }
+
+    .estilos__galeria img {
+        width: 100%;
+        height: auto;
+    }
+
+    .formulario {
+        margin: 0px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .main_contacto {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
 

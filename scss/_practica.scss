@@ -1,0 +1,49 @@
+.main {
+    padding: 5px;
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    .intro {
+        text-align: center;
+        font-size: 26px;
+        line-height: 30px;
+        padding-top: 40px;
+    }
+
+    .intro__text {
+        text-align: justify;
+        font-size: 18px;
+        line-height: 25px;
+        padding: 20px;
+        margin: 0px 40px;
+    }
+}
+
+.img__practica {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    img {
+        width: 400px;
+        height: 280px;
+        padding: 5px;
+        @include borde (#bdbba9);
+        &:hover {
+            width: 410px;
+            height: 290px;
+        }
+    }
+}
+
+.section__info {
+    margin: 30px 30px;
+    padding: 10px 15px 16px 30px;
+    @include borde (#706f63);
+    overflow: scroll;
+    height: 380px;
+    line-height: 25px;
+    background-color: #f8f2f2;
+    grid-area: info;
+}

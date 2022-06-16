@@ -40,7 +40,7 @@ body {
 
 /* cuerpo y texto */
 
-#inicio {
+#.inicio {
     background-color: #f3d8c7;
     grid-area: header;
     border: 0.05px groove #4d4646;

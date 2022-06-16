@@ -7,95 +7,60 @@
         "main main main main"
         "info info info info"
         "footer footer footer footer";
-    background-color: #f8edeba6;
-    margin: 1px;
+    background-color: $colorFondo;
+}
 
-    @media screen and (max-width: 480px) {
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.1fr 1.8fr 0.3fr 0.3fr;
-        grid-template-areas:
-            "header"
-            "main"
-            "info"
-            "footer";
-        justify-content: center;
+.main {
+    padding: 5px;
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    .intro,
+    .titulo_estilos {
+        text-align: center;
+        font-size: 26px;
+        line-height: 30px;
+        padding-top: 40px;
     }
 
-    .main {
-        padding: 5px;
-        grid-area: main;
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-
-        .intro,
-        .titulo_estilos {
-            text-align: center;
-            font-size: 26px;
-            line-height: 30px;
-            padding-top: 40px;
-
-            @media screen and (max-width: 480px) {
-                font-size: 24px;
-                padding-top: 15px;
-            }
-
-        }
-
-        .intro__text {
-            text-align: justify;
-            font-size: 18px;
-            line-height: 25px;
-            padding: 20px;
-            margin: 0px 40px;
-
-            @media screen and (max-width: 480px) {
-                text-align: justify;
-                font-size: 16px;
-                line-height: 20px;
-                padding: 10px;
-                margin: 0px 30px;
-            }
-        }
-
-        .estilos__galeria {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            padding-top: 2rem;
-
-            @media screen and (max-width: 480px) {
-                width: 100%;
-            }
-
-            .estilos__galeria img {
-                padding: 5px;
-                width: 500px;
-                height: 380px;
-                border: 1px solid #713d4b;
-
-                @media screen and (max-width: 480px) {
-                    width: 100%;
-                    height: auto;
-                }
-
-                &:hover {
-                    width: 520px;
-                    height: 400px;
-                }
-            }
-        }
-    }
-
-    .section__info {
-        margin: 30px 30px;
-        padding: 10px 15px 16px 30px;
-        border: 1px groove;
-        overflow: scroll;
-        height: 380px;
+    .intro__text {
+        text-align: justify;
+        font-size: 18px;
         line-height: 25px;
-        background-color: #f8f2f2;
-        grid-area: info;
+        padding: 20px;
+        margin: 0px 40px;
     }
+
+    .estilos__galeria {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-top: 2rem;
+
+        img {
+            padding: 5px;
+            width: 500px;
+            height: 380px;
+            @include borde (#713d4b);
+
+            &:hover {
+                width: 520px;
+                height: 400px;
+            }
+        }
+    }
+}
+
+.section__info {
+    margin: 30px 30px;
+    padding: 10px 15px 16px 30px;
+    @include borde (#70655e);
+    overflow: scroll;
+    height: 380px;
+    line-height: 25px;
+    background-color: #f8f2f2;
+    grid-area: info;
 }

@@ -61,7 +61,7 @@
 .section__info {
   margin: 30px 30px;
   padding: 10px 15px 16px 30px;
-  border: 1px groove;
+  @include borde (#6f6d61);
   overflow: scroll;
   height: 380px;
   line-height: 25px;

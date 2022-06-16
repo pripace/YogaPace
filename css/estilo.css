@@ -144,88 +144,45 @@ footer .redes a {
   padding-bottom: 5px;
 }
 
-.body__estilos {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.3fr 1.6fr 1fr 0.5fr;
-  grid-template-areas: "header header header header" "main main main main" "info info info info" "footer footer footer footer";
-  background-color: rgba(248, 237, 235, 0.6509803922);
-  margin: 1px;
-}
-@media screen and (max-width: 480px) {
-  .body__estilos {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 1.8fr 0.3fr 0.3fr;
-    grid-template-areas: "header" "main" "info" "footer";
-    justify-content: center;
-  }
-}
-.body__estilos .main {
+.main {
   padding: 5px;
   grid-area: main;
   display: flex;
   flex-direction: column;
   align-items: stretch;
 }
-.body__estilos .main .intro,
-.body__estilos .main .titulo_estilos {
+.main .intro {
   text-align: center;
   font-size: 26px;
   line-height: 30px;
   padding-top: 40px;
 }
-@media screen and (max-width: 480px) {
-  .body__estilos .main .intro,
-.body__estilos .main .titulo_estilos {
-    font-size: 24px;
-    padding-top: 15px;
-  }
-}
-.body__estilos .main .intro__text {
+.main .intro__text {
   text-align: justify;
   font-size: 18px;
   line-height: 25px;
   padding: 20px;
   margin: 0px 40px;
 }
-@media screen and (max-width: 480px) {
-  .body__estilos .main .intro__text {
-    text-align: justify;
-    font-size: 16px;
-    line-height: 20px;
-    padding: 10px;
-    margin: 0px 30px;
-  }
-}
-.body__estilos .main .estilos__galeria {
+
+.img__practica {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding-top: 2rem;
 }
-@media screen and (max-width: 480px) {
-  .body__estilos .main .estilos__galeria {
-    width: 100%;
-  }
-}
-.body__estilos .main .estilos__galeria .estilos__galeria img {
+.img__practica img {
+  width: 400px;
+  height: 280px;
   padding: 5px;
-  width: 500px;
-  height: 380px;
-  border: 1px solid #713d4b;
+  border: 1px solid #bdbba9;
 }
-@media screen and (max-width: 480px) {
-  .body__estilos .main .estilos__galeria .estilos__galeria img {
-    width: 100%;
-    height: auto;
-  }
+.img__practica img:hover {
+  width: 410px;
+  height: 290px;
 }
-.body__estilos .main .estilos__galeria .estilos__galeria img:hover {
-  width: 520px;
-  height: 400px;
-}
-.body__estilos .section__info {
+
+.section__info {
   margin: 30px 30px;
   padding: 10px 15px 16px 30px;
   border: 1px groove;
@@ -236,9 +193,222 @@ footer .redes a {
   grid-area: info;
 }
 
+.body__estilos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 1.6fr 1fr 0.5fr;
+  grid-template-areas: "header header header header" "main main main main" "info info info info" "footer footer footer footer";
+  background-color: rgba(248, 237, 235, 0.6509803922);
+}
+
+.main {
+  padding: 5px;
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.main .intro,
+.main .titulo_estilos {
+  text-align: center;
+  font-size: 26px;
+  line-height: 30px;
+  padding-top: 40px;
+}
+.main .intro__text {
+  text-align: justify;
+  font-size: 18px;
+  line-height: 25px;
+  padding: 20px;
+  margin: 0px 40px;
+}
+.main .estilos__galeria {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 2rem;
+}
+.main .estilos__galeria img {
+  padding: 5px;
+  width: 500px;
+  height: 380px;
+  border: 1px solid #713d4b;
+}
+.main .estilos__galeria img:hover {
+  width: 520px;
+  height: 400px;
+}
+
+.section__info {
+  margin: 30px 30px;
+  padding: 10px 15px 16px 30px;
+  border: 1px groove;
+  overflow: scroll;
+  height: 380px;
+  line-height: 25px;
+  background-color: #f8f2f2;
+  grid-area: info;
+}
+
+.main_meditacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main_meditacion .intro {
+  text-align: center;
+  font-size: 26px;
+  line-height: 30px;
+  padding-top: 40px;
+}
+.main_meditacion .intro__text {
+  text-align: justify;
+  font-size: 18px;
+  line-height: 25px;
+  padding: 20px;
+  margin: 0px 40px;
+}
+.main_meditacion .carousel .carousel-inner .carousel-item .img_meditacion {
+  max-width: 100%;
+  width: 700px;
+  height: 480px;
+  align-self: center;
+  border: 2px solid #bdbba9;
+}
+
+.section__info {
+  margin: 30px 30px;
+  padding: 10px 15px 16px 30px;
+  border: 1px groove;
+  overflow: scroll;
+  height: 380px;
+  line-height: 25px;
+  background-color: #f8f2f2;
+  grid-area: info;
+}
+.section__info .titulo {
+  padding: 8px;
+  text-align: justify;
+}
+
+.meditacionLista {
+  padding: 10px 60px;
+  margin: 40px;
+}
+.meditacionLista .ul li {
+  list-style-type: lower-latin;
+  line-height: 25px;
+}
+
+.main {
+  padding: 5px;
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.main .estilos__galeria {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 2rem;
+}
+.main .estilos__galeria img {
+  padding: 5px;
+  width: 500px;
+  height: 380px;
+  border: 1px solid #713d4b;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
+}
+
+body {
+  margin: 2px;
+  background-color: rgba(248, 237, 235, 0.6509803922);
+  height: 100vh;
+}
+
+/* MEDIAS Q */
+@media screen and (max-width: 480px) {
+  .body__index {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 1.8fr 0.3fr 0.2fr 0.3fr;
+    grid-template-areas: "header" "main" "info" "horarios" "footer";
+    justify-content: center;
+  }
+
+  #inicio .menu li {
+    font-size: 1rem;
+  }
+
+  .intro__text {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px;
+    margin: 0px 30px;
+  }
+
+  .index_galeria,
+.estilos__galeria {
+    width: 100%;
+  }
+
+  .horarios {
+    width: 90%;
+    margin-right: 5px;
+  }
+
+  footer,
+.mapa,
+.redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .inicio__titulo {
+    font-size: 30px;
+  }
+
+  .body__estilos {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 1.8fr 0.3fr 0.3fr;
+    grid-template-areas: "header" "main" "info" "footer";
+    justify-content: center;
+  }
+
+  .titulo_estilos,
+.intro {
+    font-size: 24px;
+    padding-top: 15px;
+  }
+
+  .img_meditacion {
+    width: 100%;
+    height: auto;
+  }
+
+  .estilos__galeria img {
+    width: 100%;
+    height: auto;
+  }
+
+  .formulario {
+    margin: 0px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .main_contacto {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }/*# sourceMappingURL=estilo.css.map */

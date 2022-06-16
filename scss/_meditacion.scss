@@ -1,0 +1,64 @@
+.main_meditacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .intro {
+        text-align: center;
+        font-size: 26px;
+        line-height: 30px;
+        padding-top: 40px;
+    }
+
+    .intro__text {
+        text-align: justify;
+        font-size: 18px;
+        line-height: 25px;
+        padding: 20px;
+        margin: 0px 40px;
+    }
+
+    .carousel {
+        .carousel-inner {
+            .carousel-item {
+                .img_meditacion {
+                    max-width: 100%;
+                    width: 700px;
+                    height: 480px;
+                    align-self: center;
+                    @include borde (#bdbba9);
+
+                }
+
+            }
+        }
+    }
+
+}
+
+.section__info {
+    margin: 30px 30px;
+    padding: 10px 15px 16px 30px;
+    @include borde (#4e4d3f);
+    overflow: scroll;
+    height: 380px;
+    line-height: 25px;
+    background-color: #f8f2f2;
+    grid-area: info;
+
+    .titulo {
+        padding: 8px;
+        text-align: justify;
+    }
+}
+
+.meditacionLista {
+    padding: 10px 60px;
+    margin: 40px;
+
+    .ul li {
+        list-style-type: lower-latin;
+        line-height: 25px;
+
+    }
+}
