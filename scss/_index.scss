@@ -14,24 +14,24 @@
     "footer footer footer footer";
 }
 
-  .index_galeria {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 1rem;
+.index_galeria {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 1rem;
 
-    img {
-      padding: 5px;
-      width: 350px;
-      height: 230px;
+  img {
+    padding: 5px;
+    width: 350px;
+    height: 230px;
 
-      &:hover {
-        width: 355px;
-        height: 235px;
-      }
+    &:hover {
+      width: 355px;
+      height: 235px;
     }
   }
+}
 
 .horarios {
   padding: 30px 0px 50px 50px;
@@ -39,5 +39,15 @@
 
   h4 {
     padding-bottom: 5px;
+  }
+}
+
+.main {
+  .intro__text {
+    ul li {
+      text-align: center;
+      list-style: none;
+      padding: 5px;
+    }
   }
 }

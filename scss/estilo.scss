@@ -15,7 +15,7 @@
     font-family: "Lato", sans-serif;
 }
 
-body {
+.body {
     margin: 2px;
     background-color: $colorFondo;
     height: 100vh;
@@ -36,7 +36,7 @@ body {
     }
 
     .intro__text {
-        text-align: justify;
+        text-align: center;
         font-size: 18px;
         line-height: 25px;
         padding: 20px;
@@ -45,7 +45,7 @@ body {
 }
 
 .section__info {
-    margin: 30px;
+    margin: 30px 80px;
     padding: 10px 15px 16px 30px;
     @include borde (#706f63);
     overflow: scroll;
@@ -53,6 +53,10 @@ body {
     line-height: 25px;
     background-color: $colorFondo;
     grid-area: info;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 
     .titulo {
         padding: 8px;
@@ -95,16 +99,21 @@ body {
         justify-content: center;
     }
 
+    .inicio{
+        width: 100%;
+    }
+
     #inicio .menu li {
         font-size: 1rem;
     }
 
-    .intro__text {
-        text-align: justify;
-        font-size: 16px;
-        line-height: 20px;
-        padding: 10px;
-        margin: 0px 30px;
+    .main {
+        .intro__text {
+            font-size: 16px;
+            line-height: 20px;
+            padding: 2px;
+            margin: 10px;
+        }
     }
 
     .index_galeria,
@@ -114,7 +123,6 @@ body {
 
     .horarios {
         width: 90%;
-        margin-right: 5px;
     }
 
     footer,
@@ -161,5 +169,9 @@ body {
     .main_contacto {
         display: flex;
         flex-direction: column-reverse;
+    }
+
+    .section__info {
+        margin: 10px;
     }
 }

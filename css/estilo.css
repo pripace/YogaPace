@@ -102,6 +102,12 @@ footer .redes a {
   padding-bottom: 5px;
 }
 
+.main .intro__text ul li {
+  text-align: center;
+  list-style: none;
+  padding: 5px;
+}
+
 .img__practica {
   display: flex;
   flex-direction: row;
@@ -163,7 +169,7 @@ footer .redes a {
   font-family: "Lato", sans-serif;
 }
 
-body {
+.body {
   margin: 2px;
   background-color: rgba(248, 237, 235, 0.6509803922);
   height: 100vh;
@@ -183,7 +189,7 @@ body {
   padding-top: 40px;
 }
 .main .intro__text {
-  text-align: justify;
+  text-align: center;
   font-size: 18px;
   line-height: 25px;
   padding: 20px;
@@ -191,7 +197,7 @@ body {
 }
 
 .section__info {
-  margin: 30px;
+  margin: 30px 80px;
   padding: 10px 15px 16px 30px;
   border: 1px groove #706f63;
   overflow: scroll;
@@ -199,6 +205,10 @@ body {
   line-height: 25px;
   background-color: rgba(248, 237, 235, 0.6509803922);
   grid-area: info;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 .section__info .titulo {
   padding: 8px;
@@ -232,16 +242,19 @@ body {
     justify-content: center;
   }
 
+  .inicio {
+    width: 100%;
+  }
+
   #inicio .menu li {
     font-size: 1rem;
   }
 
-  .intro__text {
-    text-align: justify;
+  .main .intro__text {
     font-size: 16px;
     line-height: 20px;
-    padding: 10px;
-    margin: 0px 30px;
+    padding: 2px;
+    margin: 10px;
   }
 
   .index_galeria,
@@ -251,7 +264,6 @@ body {
 
   .horarios {
     width: 90%;
-    margin-right: 5px;
   }
 
   footer,
@@ -297,5 +309,9 @@ footer .redes h4,
   .main_contacto {
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  .section__info {
+    margin: 10px;
   }
 }/*# sourceMappingURL=estilo.css.map */
