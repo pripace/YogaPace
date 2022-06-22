@@ -3,14 +3,15 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding: 25px 10px;
+    margin-bottom: 10px;
     img {
         width: 400px;
         height: 280px;
-        padding: 5px;
         @include borde (#bdbba9);
         &:hover {
-            width: 410px;
-            height: 290px;
+            width: 405px;
+            height: 285px;
         }
     }
 }

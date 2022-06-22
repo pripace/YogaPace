@@ -73,13 +73,14 @@
 
     img {
         padding: 5px;
+        margin: 5px 0px;
         width: 500px;
         height: 380px;
         @include borde (#713d4b);
 
         &:hover {
-            width: 520px;
-            height: 400px;
+            width: 510px;
+            height: 390px;
         }
     }
 }
@@ -89,17 +90,18 @@
 @media screen and (max-width: 480px) {
     .body__index {
         grid-template-columns: 1fr;
-        grid-template-rows: 0.1fr 1.8fr 0.3fr 0.2fr 0.3fr;
+        grid-template-rows: 0.1fr 1.8fr 0.3fr 0.2fr 0.2fr 0.3fr;
         grid-template-areas:
             "header"
             "main"
             "info"
             "horarios"
+            "spotify"
             "footer";
         justify-content: center;
     }
 
-    .inicio{
+    .inicio {
         width: 100%;
     }
 
@@ -117,12 +119,26 @@
     }
 
     .index_galeria,
-    .estilos__galeria {
+    .estilos__galeria,
+    .carousel-inner {
         width: 100%;
+    }
+
+    .spotify {
+        padding: 10px 20px 10px 30px;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
     }
 
     .horarios {
         width: 90%;
+        margin: 10px;
+        padding: 10px;
+        align-items: center;
     }
 
     footer,
@@ -154,8 +170,12 @@
         padding-top: 15px;
     }
 
-    .img_meditacion,
-    .estilos__galeria img {
+    .img__practica img,
+    .index_galeria img,
+    .img_meditacion img,
+    .estilos__galeria img,
+    .img_meditacion {
+        margin: 5px 0px;
         width: 100%;
         height: auto;
     }

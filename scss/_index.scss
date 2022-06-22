@@ -10,7 +10,7 @@
     "header header header header"
     "main main main main"
     "info info info info"
-    "horarios horarios . ."
+    "horarios horarios spotify spotify"
     "footer footer footer footer";
 }
 
@@ -22,20 +22,24 @@
   padding-top: 1rem;
 
   img {
-    padding: 5px;
+    padding: 10px;
     width: 350px;
     height: 230px;
 
     &:hover {
-      width: 355px;
-      height: 235px;
+      width: 352px;
+      height: 232px;
     }
   }
 }
 
 .horarios {
-  padding: 30px 0px 50px 50px;
+  padding: 30px 30px 30px 70px;
   grid-area: horarios;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 
   h4 {
     padding-bottom: 5px;
@@ -51,3 +55,15 @@
     }
   }
 }
+
+  .spotify{
+    grid-area: spotify;
+    padding: 30px 70px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    .playlist{
+      padding: 10px;
+    }
+  }
