@@ -174,12 +174,15 @@
     .index_galeria img,
     .img_meditacion img,
     .estilos__galeria img,
-    .img_meditacion {
+    .img_meditacion img{
         margin: 5px 0px;
         width: 100%;
         height: auto;
     }
 
+    .d-block{
+        max-width: 98%;
+    }
     .formulario {
         margin: 0px;
         padding: 10px;
