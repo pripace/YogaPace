@@ -1,9 +1,14 @@
 footer {
     border-top: 0.5px groove #d8e2dc;
-    background-image: linear-gradient(to bottom, #f3d8c7, #e7cab7);
+    background-image: linear-gradient(to bottom, #f3d8c7, #caaf9d);
     padding: 20px;
     margin: 2px;
     grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
 
     .mapa {
         padding-bottom: 5px;
@@ -15,6 +20,7 @@ footer {
 
     .redes {
         @extend .mapa;
+        margin: 10px;
         a {
             color: $colorLetras;
             text-decoration: none;

@@ -1,5 +1,5 @@
 .inicio {
-  background-image: linear-gradient(to top, #f3d8c7, #e7cab7);
+  background-image: linear-gradient(to top, #f3d8c7, #e4c3ad);
   grid-area: header;
   border: 1px groove #4d4646;
   margin: 2px 4px;
@@ -53,13 +53,21 @@
 
 footer {
   border-top: 0.5px groove #d8e2dc;
-  background-image: linear-gradient(to bottom, #f3d8c7, #e7cab7);
+  background-image: linear-gradient(to bottom, #f3d8c7, #caaf9d);
   padding: 20px;
   margin: 2px;
   grid-area: footer;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
 footer .mapa, footer .redes, footer .redes h4, footer .mapa h4 {
   padding-bottom: 5px;
+}
+footer .redes {
+  margin: 10px;
 }
 footer .redes a {
   color: #4d4646;
@@ -196,6 +204,7 @@ footer .redes a {
   grid-area: main;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: stretch;
 }
 .main .intro {
@@ -236,7 +245,6 @@ footer .redes a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding-top: 2rem;
 }
 .estilos__galeria img {
   padding: 5px;
