@@ -42,25 +42,6 @@
                 }
             }
 
-            .submenu {
-                display: none;
-                position: absolute;
-
-                li {
-                    display: block;
-                    background-color: #efe5dc;
-                    font-size: 17px;
-                    padding: 10px 15px;
-                    opacity: 90%;
-                    text-align: left;
-
-                    a {
-                        color: $colorLetras;
-                        list-style-type: none;
-                    }
-                }
-
-            }
         }
     }
 }

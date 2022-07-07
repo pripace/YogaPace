@@ -33,7 +33,7 @@
         text-align: center;
         font-size: 26px;
         line-height: 30px;
-        padding-top: 40px;
+        padding-top: 30px;
     }
 
     .intro__text {
@@ -43,27 +43,30 @@
         padding: 20px;
         margin: 0px 40px;
     }
-}
 
-.section__info {
-    margin: 30px 80px;
-    padding: 10px 15px 16px 30px;
-    @include borde (#706f63);
-    overflow: scroll;
-    height: 380px;
-    line-height: 25px;
-    background-color: $colorFondo;
-    grid-area: info;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-
-    .titulo {
-        padding: 8px;
-        text-align: justify;
+    .section__info {
+        margin: 30px 80px;
+        padding: 10px 15px 16px 30px;
+        @include borde (#706f63);
+        overflow: scroll;
+        height: 380px;
+        line-height: 25px;
+        background-color: $colorFondo;
+        grid-area: info;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 16px;
+    
+        .titulo {
+            padding: 8px;
+            text-align: justify;
+        }
     }
 }
+
+
 
 .estilos__galeria {
     display: flex;
@@ -79,8 +82,8 @@
         @include borde (#713d4b);
 
         &:hover {
-            width: 510px;
-            height: 390px;
+            width: 505px;
+            height: 385px;
         }
     }
 }
@@ -135,8 +138,7 @@
     }
 
     .horarios {
-        width: 90%;
-        margin: 10px;
+        width: 100%;
         padding: 10px;
         align-items: center;
     }
@@ -174,15 +176,16 @@
     .index_galeria img,
     .img_meditacion img,
     .estilos__galeria img,
-    .img_meditacion img{
+    .img_meditacion img {
         margin: 5px 0px;
         width: 100%;
         height: auto;
     }
 
-    .d-block{
+    .d-block {
         max-width: 98%;
     }
+
     .formulario {
         margin: 0px;
         padding: 10px;

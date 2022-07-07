@@ -14,38 +14,6 @@
     "footer footer footer footer";
 }
 
-.index_galeria {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-top: 1rem;
-
-  img {
-    padding: 10px;
-    width: 350px;
-    height: 230px;
-
-    &:hover {
-      width: 352px;
-      height: 232px;
-    }
-  }
-}
-
-.horarios {
-  padding: 30px 30px 30px 70px;
-  grid-area: horarios;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-
-  h4 {
-    padding-bottom: 5px;
-  }
-}
-
 .main {
   .intro__text {
     ul li {
@@ -54,16 +22,57 @@
       padding: 5px;
     }
   }
-}
 
-  .spotify{
-    grid-area: spotify;
-    padding: 30px 70px 30px 30px;
+  .index_galeria {
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    .playlist{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 1rem;
+
+    img {
       padding: 10px;
+      width: 350px;
+      height: 230px;
+
+      &:hover {
+        width: 352px;
+        height: 232px;
+      }
     }
   }
+
+  .horarios {
+    padding: 30px;
+    grid-area: horarios;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    h4 {
+      padding-bottom: 5px;
+    }
+
+    tr {
+      th, td {
+       padding: 10px 20px;
+      }
+    }
+  }
+
+
+}
+
+.spotify {
+  grid-area: spotify;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+
+  .playlist {
+    padding: 10px;
+  }
+}
