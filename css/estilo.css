@@ -57,6 +57,12 @@ footer .redes a {
   color: #4d4646;
   text-decoration: none;
 }
+footer .redes a img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  margin: 5px;
+}
 
 .body__index {
   margin: 2px;
@@ -244,7 +250,7 @@ footer .redes a {
 }
 
 /* MEDIAS Q */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .body__index {
     grid-template-columns: 1fr;
     grid-template-rows: 0.1fr 1.8fr 0.3fr 0.2fr 0.2fr 0.3fr;
@@ -266,6 +272,22 @@ footer .redes a {
     padding: 2px;
     margin: 10px;
   }
+  .main .horarios {
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+    padding: 1px;
+  }
+  .main .horarios h4 {
+    padding-bottom: 2px;
+  }
+  .main .horarios tr th,
+.main .horarios tr td {
+    padding: 2px;
+  }
+  .main .section__info {
+    margin: 10px;
+  }
 
   .index_galeria,
 .estilos__galeria,
@@ -274,18 +296,12 @@ footer .redes a {
   }
 
   .spotify {
-    padding: 10px 20px 10px 30px;
+    padding: 20px;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: stretch;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
-  }
-
-  .horarios {
-    width: 100%;
-    padding: 10px;
     align-items: center;
   }
 
@@ -307,7 +323,7 @@ footer .redes h4,
   .body__estilos {
     grid-template-columns: 1fr;
     grid-template-rows: 0.1fr 1.8fr 0.3fr 0.3fr;
-    grid-template-areas: "header" "main" "info" "footer";
+    grid-template-areas: "header" "main" "main" "footer";
     justify-content: center;
   }
 
@@ -323,7 +339,7 @@ footer .redes h4,
 .estilos__galeria img,
 .img_meditacion img {
     margin: 5px 0px;
-    width: 100%;
+    width: 80%;
     height: auto;
   }
 
@@ -341,8 +357,38 @@ footer .redes h4,
     display: flex;
     flex-direction: column-reverse;
   }
+}
+@media screen and (max-width: 375px) {
+  .body {
+    margin: 0;
+  }
 
-  .section__info {
-    margin: 10px;
+  .main .index_galeria img {
+    padding: 5px;
+    margin: 1px;
+  }
+  .main .intro {
+    font-size: 22px;
+  }
+  .main .intro__text {
+    font-size: 20px;
+  }
+  .main .intro__text ul li {
+    font-size: 20px;
+  }
+  .main .section__info {
+    margin: 2px;
+  }
+  .main .img__practica {
+    padding: 5px;
+  }
+
+  .main_meditacion .carousel .carousel-inner .d-block {
+    width: 350px;
+    height: 250px;
+  }
+
+  .main_contacto img {
+    display: none;
   }
 }/*# sourceMappingURL=estilo.css.map */

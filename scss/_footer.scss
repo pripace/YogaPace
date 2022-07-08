@@ -21,9 +21,17 @@ footer {
     .redes {
         @extend .mapa;
         margin: 10px;
+
         a {
             color: $colorLetras;
             text-decoration: none;
+
+            img {
+                width: 28px;
+                height: 28px;
+                border-radius: 50%;
+                margin: 5px;
+            }
         }
     }
 }
